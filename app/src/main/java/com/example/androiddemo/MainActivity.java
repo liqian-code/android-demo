@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
      * okhttp的get方法
      * @param view
      */
+
     public void doGet(View view){
         String url = "https://www.baidu.com/";
         OkHttpClient okHttpClient = new OkHttpClient();
