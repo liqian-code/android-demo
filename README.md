@@ -18,10 +18,6 @@ Android Studio Version:4.1.3
 language:java
 ```
 
-## 运行
-```
-```
-
 #项目搭建步骤
 ```
 1、创建一个安卓空项目
@@ -54,6 +50,23 @@ language:java
 ```
 ```
 
-## 插件使用
+## OKhttp插件使用
+```
+1、添加依赖：
+    在app\build.gradle文件中，
+    dependencies {
+        ...
+        //OkHttp
+        implementation 'com.squareup.okhttp3:okhttp:3.14.2'
+        implementation 'com.squareup.okio:okio:1.17.4'
+    }
+2、在MainActivity文件中增加okhttp的get方法。
+3、增加log打印L.java文件。
+4、网络请求提示权限问题：
+    在\app\src\main\AndroidManifest.xml文件中加入
+    <!--由于需要访问网络，但是没有加入访问权限, 在AndroidManifest.xml中加入此网络访问权限就可以了-->
+    <uses-permission android:name="android.permission.INTERNET" />
+5、调用get方法。
+```
 
 
