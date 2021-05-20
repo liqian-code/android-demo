@@ -69,4 +69,32 @@ language:java
 5、调用get方法。
 ```
 
+## Android-Flat-Button插件使用
+```
+1、添加依赖：
+      在app\build.gradle文件中，
+      dependencies {
+          ...
+          // Android-Flat-Button
+          compile 'info.hoang8f:fbutton:1.0.5'
+      }
+2、将下载下来的4个文件添加到相应的文件/文件夹：
+    （1）app\src\main\res\values\attrs.xml
+    （2）app\src\main\res\values\colors.xml
+    （3）app\src\main\res\values\dimens.xml
+    （4）app\src\main\java\com\example\androiddemo\widget\FButton.java
+3、修改原始的button标签：
+    （1）把xmlns:fbutton=”http://schemas.android.com/apk/res-auto”加入到XML中
+    （2）把原来XML中<Button>形式改为info.hoang8f.widget.FButton
+    （3）<info.hoang8f.widget.FButton
+           ...
+          fbutton:buttonColor="@color/color_concrete"
+          fbutton:shadowColor="@color/color_asbestos"
+          fbutton:shadowEnabled="true"
+          fbutton:shadowHeight="5dp"
+          fbutton:cornerRadius="5dp"
+           ...
+         />
+```
+
 
