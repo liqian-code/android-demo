@@ -12,10 +12,11 @@ https://github.com/liqian-code/android-demo.git
 
 ## 环境依赖
 ```
-Gradle Version:6.5
-Android Gradle Plugin Version:4.1.3
-Android Studio Version:4.1.3
-language:java
+Gradle Version: 6.5
+Android Gradle Plugin Version: 4.1.3
+Android Studio Version: 4.1.3
+language: java
+minSdkVersion: 16(API 16: Android 4.1(Jelly Bean))
 ```
 
 #项目搭建步骤
@@ -39,7 +40,7 @@ language:java
         ① git add .                   （注：别忘记后面的.，此操作是把Test文件夹下面的文件都添加进来）
         ② git commit  -m  "提交信息"   （注：“提交信息”里面换成你需要，如“first commit”）
         ③ git push -u origin main     （注：此操作目的是把本地仓库push到github上面，此步骤需要你输入帐号和密码）
-    9、使用GitHub客户端管理工具管理代码：点击【Add】，选择添加本地文件【Add existing repository】，弹窗地址选择刚刚新生成的android-demo文件。
+    （9）使用GitHub客户端管理工具管理代码：点击【Add】，选择添加本地文件【Add existing repository】，弹窗地址选择刚刚新生成的android-demo文件。
 ```
 
 ## 目录结构说明
@@ -53,9 +54,9 @@ android-demo
   -src                        就是存放java源代码的地方。
 
     -main
-      -java                     毫无疑问，java目录是放置我们所有java代码的地方。
-      -res                      这个目录下的内容就有点多了。简单点说，就是你在项目中使用到的所有图片，布局，字符串等资源都要存放在这个目录下。当然这个目录下还有很多子目录，图片放在drawable目录下，布局放在layout目录下，字符串放在values目录下，所以你不用担心会把整个res目录弄得乱糟糟的。
-      -AndroidManifest.xml      这是你整个Android项目的配置文件，你在程序中定义的所以四大组件都需要在这个文件里注册，另外还可以在这个文件中给应用程序添加权限声明。
+      -java                   毫无疑问，java目录是放置我们所有java代码的地方。
+      -res                    这个目录下的内容就有点多了。简单点说，就是你在项目中使用到的所有图片，布局，字符串等资源都要存放在这个目录下。当然这个目录下还有很多子目录，图片放在drawable目录下，布局放在layout目录下，字符串放在values目录下，所以你不用担心会把整个res目录弄得乱糟糟的。
+      -AndroidManifest.xml    这是你整个Android项目的配置文件，你在程序中定义的所以四大组件都需要在这个文件里注册，另外还可以在这个文件中给应用程序添加权限声明。
     -AndroidTest              此处是用来编写Android Test测试用例的，可以对项目进行一些自动化测试。
     -test                     此处是用来编写Unit Test测试用例的，是对项目进行自动化测试的另一种方式。
   -.gitignore                 这个文件用于将app模块内的指定的目录或文件排除在版本控制之外，作用和外层的.gitignore文件类似。
@@ -122,6 +123,14 @@ android-demo
           fbutton:cornerRadius="5dp"
            ...
          />
+```
+
+## 生命周期
+```
+```
+
+## 页面传值
+```
 ```
 
 
